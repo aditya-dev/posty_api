@@ -2,7 +2,7 @@ module Folder
   MAIL_ROOT_FOLDER = "/srv/vmail"
   MAIL_USER = "vmail"
   MAIL_GROUP = MAIL_USER
-  STORAGE_CLASS = "mdbox/storage" # Possible values "mdbox", "Maildir", "mbox"
+  STORAGE_CLASS = "Maildir/storage" # Possible values "mdbox", "Maildir", "mbox"
   
   def move_folder
     if ENV["RACK_ENV"] == "production"
